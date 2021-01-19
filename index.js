@@ -164,11 +164,50 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+let computerGen = Math.random()
+let computer = 'null'
+
+if(computerGen <= .3333){
+  computer = 'rock'
 }
-  
-  
+if(computerGen > .3333 && computerGen < .6666){
+  computer = 'paper'
+}
+if(computerGen >= .6666){
+  computer = 'scissors'
+}
+
+function game(user, computer){
+    if(user === 'rock' && computer === 'rock'){
+      return "it's a tie"
+    }
+    if(user === 'rock' && computer === 'paper'){
+      return "you lose!"
+    }
+    if(user === 'rock' && computer === 'scissors'){
+      return "you win!"
+    }
+    if(user === 'paper' && computer === 'rock'){
+      return "you win!"
+    }
+    if(user === 'paper' && computer === 'paper'){
+      return "it's a tie"
+    }
+    if(user === 'paper' && computer === 'scissors'){
+      return "you lose!"
+    }
+    if(user === 'scissors' && computer === 'rock'){
+      return "you lose!"
+    }
+    if(user === 'scissors' && computer === 'paper'){
+      return "you win!"
+    }
+    if(user === 'scissors' && computer === 'scissors'){
+      return "it's a tie"
+    }
+}
+
+console.log(game('paper', computer))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
