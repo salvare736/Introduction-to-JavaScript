@@ -21,7 +21,7 @@ Do the following:
 const votingAge = 20
 
 if (votingAge > 17){
-  console.log('true')
+  console.log(true)
 }
 
 /*
@@ -35,9 +35,14 @@ Do the following:
    HINT: no function required
 */
 
+let b1Variable1 = 10
+const b1Variable2 = 20
 
+if(b1Variable2 === 20){
+  b1Variable1 = 30
+}
 
-
+console.log(b1Variable1)
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -50,8 +55,11 @@ Do the following:
    HINT: look up the Number method
 */
 
+let c1Variable = '1999'
 
+c1Variable = Number('1999')
 
+console.log(c1Variable)
 
 /*
 Task 1d - Multiply
@@ -64,9 +72,7 @@ Do the following:
 
 function multiply(a, b){
     return a * b
-  }
-
-
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
